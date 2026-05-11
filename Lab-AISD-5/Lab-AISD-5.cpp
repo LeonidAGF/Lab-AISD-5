@@ -1,6 +1,7 @@
 #include <benchmark/benchmark.h>
 #include <gtest/gtest.h>
 #include "sort.hpp"
+#include <fstream>
 
 int main(int argc, char** argv) {
 
@@ -10,7 +11,10 @@ int main(int argc, char** argv) {
 
     //benchmark
     benchmark::Initialize(&argc, argv);
-    benchmark::RunSpecifiedBenchmarks();
+    std::ofstream out("result.txt");
+    benchmark::ConsoleReporter reporter;
+    reporter.SetOutputStream(&out);
+    benchmark::RunSpecifiedBenchmarks(&reporter);
 
     //cli
     sort();

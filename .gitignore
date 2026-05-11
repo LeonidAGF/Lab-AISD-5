@@ -426,3 +426,47 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+# =========================
+# Python
+# =========================
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# =========================
+# PyCharm
+# =========================
+
+# Project settings
+.idea/
+
+# Local PyCharm caches
+*.iml
+out/
+
+# PyCharm run configurations (optional, можно игнорировать)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/shelf/
+
+# If you want full clean ignore, already covered by .idea/
