@@ -1,4 +1,4 @@
-#include "stack.h"
+#include "stack.hpp"
 #include <stdlib.h>
 
 void add_el_to_stack(stack* st, int value) {
